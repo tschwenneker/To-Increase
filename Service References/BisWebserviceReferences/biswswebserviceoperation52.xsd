@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org" elementFormDefault="qualified" targetNamespace="http://tempuri.org" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://bis-upd10-dm5455188b4129953fdevaos.cloudax.dynamics.com/soap/services/biswswebserviceoperation?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" />
+  <xs:element name="executeOperation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" minOccurs="0" name="_HttpMethod" type="q1:BisConUrlHttpAction" />
+        <xs:element minOccurs="0" name="_ProjectId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_Url" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_UserName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_WebServiceId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_content" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="executeOperationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="result" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ping">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" minOccurs="0" name="_HttpMethod" type="q2:BisConUrlHttpAction" />
+        <xs:element minOccurs="0" name="_ProjectId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_WebServiceId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="pingResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="result" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

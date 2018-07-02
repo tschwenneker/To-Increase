@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="51d1b3b4-199f-4df4-a65b-3951a6cbc530" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://bis-upd10-dm5455188b4129953fdevaos.cloudax.dynamics.com/soap/services/biswswebserviceoperation?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="biswswebserviceoperation5.xsd" MetadataType="Schema" ID="9488ddd4-2b9f-40a6-86d4-c0fe09f0ba5f" SourceId="1" SourceUrl="https://bis-upd10-dm5455188b4129953fdevaos.cloudax.dynamics.com/soap/services/biswswebserviceoperation?xsd=xsd3" />
+    <MetadataFile FileName="biswswebserviceoperation51.xsd" MetadataType="Schema" ID="9aef03a3-d45d-4580-b844-5986822c5fca" SourceId="1" SourceUrl="https://bis-upd10-dm5455188b4129953fdevaos.cloudax.dynamics.com/soap/services/biswswebserviceoperation?xsd=xsd4" />
+    <MetadataFile FileName="biswswebserviceoperation52.xsd" MetadataType="Schema" ID="dba830cf-24d9-4c33-87ff-78fa7e4659ae" SourceId="1" SourceUrl="https://bis-upd10-dm5455188b4129953fdevaos.cloudax.dynamics.com/soap/services/biswswebserviceoperation?xsd=xsd2" />
+    <MetadataFile FileName="biswswebserviceoperation2.wsdl" MetadataType="Wsdl" ID="c05a81e7-4fed-4ab8-8569-b396703599e7" SourceId="1" SourceUrl="https://bis-upd10-dm5455188b4129953fdevaos.cloudax.dynamics.com/soap/services/biswswebserviceoperation?wsdl=wsdl0" />
+    <MetadataFile FileName="BisWsWebServiceOperation1.wsdl" MetadataType="Wsdl" ID="05cad567-716b-4c73-83fa-5f246d13b4c2" SourceId="1" SourceUrl="https://bis-upd10-dm5455188b4129953fdevaos.cloudax.dynamics.com/soap/services/biswswebserviceoperation?wsdl" />
+    <MetadataFile FileName="biswswebserviceoperation53.xsd" MetadataType="Schema" ID="327c4359-db11-4798-beee-38014230ac4a" SourceId="1" SourceUrl="https://bis-upd10-dm5455188b4129953fdevaos.cloudax.dynamics.com/soap/services/biswswebserviceoperation?xsd=xsd0" />
+    <MetadataFile FileName="biswswebserviceoperation54.xsd" MetadataType="Schema" ID="1d88eedc-28b4-4237-a7e4-486777d9b454" SourceId="1" SourceUrl="https://bis-upd10-dm5455188b4129953fdevaos.cloudax.dynamics.com/soap/services/biswswebserviceoperation?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

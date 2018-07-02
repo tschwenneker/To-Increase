@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="www.toincrease.com" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="www.toincrease.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="www.toincrease.com/Imports">
+      <xsd:import schemaLocation="https://bis-upd3-pdjf0265c6596628748devaos.cloudax.dynamics.com/soap/services/bismessagehttpaction?xsd=xsd2" namespace="www.toincrease.com" />
+      <xsd:import schemaLocation="https://bis-upd3-pdjf0265c6596628748devaos.cloudax.dynamics.com/soap/services/bismessagehttpaction?xsd=xsd3" namespace="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" />
+      <xsd:import schemaLocation="https://bis-upd3-pdjf0265c6596628748devaos.cloudax.dynamics.com/soap/services/bismessagehttpaction?xsd=xsd0" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="https://bis-upd3-pdjf0265c6596628748devaos.cloudax.dynamics.com/soap/services/bismessagehttpaction?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="executeMessage">
+    <wsdl:part name="parameters" element="tns:executeMessage" />
+  </wsdl:message>
+  <wsdl:message name="executeMessage_Headers">
+    <wsdl:part xmlns:q1="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q1:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="executeMessageResponse">
+    <wsdl:part name="parameters" element="tns:executeMessageResponse" />
+  </wsdl:message>
+  <wsdl:message name="executeMessageResponse_Headers">
+    <wsdl:part xmlns:q2="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q2:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="BisMessageStartFromHttp_executeMessage_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q3="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q3:Fault" />
+  </wsdl:message>
+  <wsdl:message name="executeMessageGet">
+    <wsdl:part name="parameters" element="tns:executeMessageGet" />
+  </wsdl:message>
+  <wsdl:message name="executeMessageGet_Headers">
+    <wsdl:part xmlns:q4="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="callContext" element="q4:CallContext" />
+  </wsdl:message>
+  <wsdl:message name="executeMessageGetResponse">
+    <wsdl:part name="parameters" element="tns:executeMessageGetResponse" />
+  </wsdl:message>
+  <wsdl:message name="executeMessageGetResponse_Headers">
+    <wsdl:part xmlns:q5="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="infolog" element="q5:Infolog" />
+  </wsdl:message>
+  <wsdl:message name="BisMessageStartFromHttp_executeMessageGet_SoapServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q6="http://schemas.microsoft.com/dynamics/2013/01/datacontracts" name="detail" element="q6:Fault" />
+  </wsdl:message>
+  <wsdl:portType name="BisMessageStartFromHttp">
+    <wsdl:operation name="executeMessage">
+      <wsdl:input wsam:Action="www.toincrease.com/BisMessageStartFromHttp/executeMessage" name="executeMessage" message="tns:executeMessage" />
+      <wsdl:output wsam:Action="www.toincrease.com/BisMessageStartFromHttp/executeMessageResponse" name="executeMessageResponse" message="tns:executeMessageResponse" />
+      <wsdl:fault wsam:Action="www.toincrease.com/BisMessageStartFromHttp/Fault" name="SoapServiceFaultFault" message="tns:BisMessageStartFromHttp_executeMessage_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="executeMessageGet">
+      <wsdl:input wsam:Action="www.toincrease.com/BisMessageStartFromHttp/executeMessageGet" name="executeMessageGet" message="tns:executeMessageGet" />
+      <wsdl:output wsam:Action="www.toincrease.com/BisMessageStartFromHttp/executeMessageGetResponse" name="executeMessageGetResponse" message="tns:executeMessageGetResponse" />
+      <wsdl:fault wsam:Action="www.toincrease.com/BisMessageStartFromHttp/Fault" name="SoapServiceFaultFault" message="tns:BisMessageStartFromHttp_executeMessageGet_SoapServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

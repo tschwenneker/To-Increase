@@ -1,0 +1,6 @@
+C:\Users\abahlman\Documents\connectivity-temp\BisConnectivityServices\bin\BisConnectivityServices.dll.config
+C:\Users\abahlman\Documents\connectivity-temp\BisConnectivityServices\bin\BisConnectivityServices.dll
+C:\Users\abahlman\Documents\connectivity-temp\BisConnectivityServices\bin\BisConnectivityServices.pdb
+C:\Users\abahlman\Documents\connectivity-temp\BisConnectivityServices\obj\Release\BisConnectivityServices.csproj.App.config
+C:\Users\abahlman\Documents\connectivity-temp\BisConnectivityServices\obj\Release\BisConnectivityServices.dll
+C:\Users\abahlman\Documents\connectivity-temp\BisConnectivityServices\obj\Release\BisConnectivityServices.pdb

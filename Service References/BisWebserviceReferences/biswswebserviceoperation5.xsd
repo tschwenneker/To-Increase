@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Dynamics.AX.Application" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:simpleType name="BisConUrlHttpAction">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Post" />
+      <xs:enumeration value="Put" />
+      <xs:enumeration value="Get" />
+      <xs:enumeration value="Patch" />
+      <xs:enumeration value="Delete" />
+      <xs:enumeration value="PostOrPut" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="BisConUrlHttpAction" nillable="true" type="tns:BisConUrlHttpAction" />
+</xs:schema>
