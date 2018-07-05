@@ -134,7 +134,7 @@ namespace BisConnectivityServices
 
             byte[] data = Convert.FromBase64String(encrypted);
             //byte[] data = System.Text.Encoding.ASCII.GetBytes(encrypted);
-            byte[] decryptedData = ProtectedData.Unprotect(data, GetSaltBytes(), DataProtectionScope.CurrentUser);
+            byte[] decryptedData = ProtectedData.Unprotect(data, GetSaltBytes(), DataProtectionScope.LocalMachine);
             //return System.Text.Encoding.ASCII.GetString(decryptedData);
             return Encoding.Unicode.GetString(decryptedData);
         }
@@ -147,7 +147,7 @@ namespace BisConnectivityServices
             }
 
             byte[] data = Encoding.Unicode.GetBytes(plain);
-            byte[] encryptedData = ProtectedData.Protect(data, GetSaltBytes(), DataProtectionScope.CurrentUser);
+            byte[] encryptedData = ProtectedData.Protect(data, GetSaltBytes(), DataProtectionScope.LocalMachine);
 
             return Convert.ToBase64String(encryptedData);
             //return System.Text.Encoding.ASCII.GetString(encryptedData);
