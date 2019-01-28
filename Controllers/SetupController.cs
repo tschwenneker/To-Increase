@@ -144,8 +144,8 @@ namespace BisConnectivityServices.Controllers
                 
             }
 
-            this.Response.StatusCode = 422;
-            this.Response.StatusDescription = "Unprocessable Entity";
+            // this.Response.StatusCode = 422;
+            // this.Response.StatusDescription = "Unprocessable Entity";
 
 
 
