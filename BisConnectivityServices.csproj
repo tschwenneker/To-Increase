@@ -29,6 +29,7 @@
     <TargetFrameworkProfile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <IntermediateOutputPath>..\Temp</IntermediateOutputPath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -54,7 +55,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Antlr3.Runtime, Version=3.5.0.2, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
       <HintPath>packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
       <Private>True</Private>
     </Reference>
@@ -70,12 +70,10 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
       <HintPath>packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
       <HintPath>packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
@@ -130,6 +128,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
@@ -164,7 +163,6 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="WebGrease, Version=1.6.5135.21930, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
       <HintPath>packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
       <Private>True</Private>
     </Reference>
@@ -217,29 +215,6 @@
     <Compile Include="SoapHelper.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="bin\Antlr3.Runtime.dll" />
-    <Content Include="bin\BisConnectivityServices.dll" />
-    <Content Include="bin\BisConnectivityServices.pdb" />
-    <Content Include="bin\Microsoft.IdentityModel.Clients.ActiveDirectory.dll" />
-    <Content Include="bin\Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.dll" />
-    <Content Include="bin\Microsoft.Web.Infrastructure.dll" />
-    <Content Include="bin\Newtonsoft.Json.dll" />
-    <Content Include="bin\System.Net.Http.Extensions.dll" />
-    <Content Include="bin\System.Net.Http.Formatting.dll" />
-    <Content Include="bin\System.Net.Http.Primitives.dll" />
-    <Content Include="bin\System.Web.Helpers.dll" />
-    <Content Include="bin\System.Web.Http.dll" />
-    <Content Include="bin\System.Web.Http.WebHost.dll" />
-    <Content Include="bin\System.Web.Mvc.dll" />
-    <Content Include="bin\System.Web.Optimization.dll" />
-    <Content Include="bin\System.Web.Razor.dll" />
-    <Content Include="bin\System.Web.WebPages.Deployment.dll" />
-    <Content Include="bin\System.Web.WebPages.dll" />
-    <Content Include="bin\System.Web.WebPages.Razor.dll" />
-    <Content Include="bin\Web.Optimization.dll" />
-    <Content Include="bin\WebGrease.dll" />
-    <Content Include="bin\WebMatrix.Data.dll" />
-    <Content Include="bin\WebMatrix.WebData.dll" />
     <Content Include="BisConnectivyServices.wpp.targets">
       <SubType>Designer</SubType>
     </Content>
@@ -292,25 +267,6 @@
     <Content Include="Images\spinner.gif" />
     <Content Include="Images\ti-cs.ico" />
     <Content Include="Images\ti-logo.png" />
-    <Content Include="packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll" />
-    <Content Include="packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.pdb" />
-    <Content Include="packages\Antlr3.3.5.1\build\AntlrBuildTask.dll" />
-    <Content Include="packages\Antlr3.3.5.1\tools\Antlr3.exe" />
-    <Content Include="packages\Antlr3.3.5.1\tools\Antlr3.Runtime.Debug.dll" />
-    <Content Include="packages\Antlr3.3.5.1\tools\Antlr3.Runtime.dll" />
-    <Content Include="packages\Antlr3.3.5.1\tools\Antlr4.StringTemplate.dll" />
-    <Content Include="packages\Antlr3.3.5.1\tools\AntlrBuildTask.dll" />
-    <Content Include="packages\Antlr3.3.5.1\tools\LICENSE.txt" />
-    <Content Include="packages\Antlr3.3.5.1\tools\Targets\Antlr3.Targets.CSharp2.dll" />
-    <Content Include="packages\Antlr3.3.5.1\tools\Targets\Antlr3.Targets.CSharp3.dll" />
-    <Content Include="packages\Antlr3.Runtime.3.5.1\lib\net20\Antlr3.Runtime.dll" />
-    <Content Include="packages\Antlr3.Runtime.3.5.1\lib\net20\Antlr3.Runtime.xml" />
-    <Content Include="packages\Antlr3.Runtime.3.5.1\lib\net40-client\Antlr3.Runtime.dll" />
-    <Content Include="packages\Antlr3.Runtime.3.5.1\lib\net40-client\Antlr3.Runtime.xml" />
-    <Content Include="packages\Antlr3.Runtime.3.5.1\lib\netstandard1.1\Antlr3.Runtime.dll" />
-    <Content Include="packages\Antlr3.Runtime.3.5.1\lib\netstandard1.1\Antlr3.Runtime.xml" />
-    <Content Include="packages\Antlr3.Runtime.3.5.1\lib\portable-net4+sl5+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1\Antlr3.Runtime.dll" />
-    <Content Include="packages\Antlr3.Runtime.3.5.1\lib\portable-net4+sl5+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1\Antlr3.Runtime.xml" />
     <Content Include="Content\milligram\milligram.scss" />
     <Content Include="Content\milligram\_Base.scss" />
     <Content Include="Content\milligram\_Blockquote.scss" />
@@ -327,47 +283,12 @@
     <Content Include="Content\milligram\_Table.scss" />
     <Content Include="Content\milligram\_Typography.scss" />
     <Content Include="Content\milligram\_Utility.scss" />
-    <Content Include="packages\Antlr.3.5.0.2\Antlr.3.5.0.2.nupkg" />
-    <Content Include="bin\BisConnectivityServices.dll.config" />
-    <Content Include="packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll" />
-    <Content Include="packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\system.web.optimization.xml" />
-    <Content Include="packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll" />
-    <Content Include="packages\WebGrease.1.6.0\lib\WebGrease.dll" />
-    <Content Include="packages\WebGrease.1.6.0\tools\WG.EXE" />
     <Content Include="packages.config">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="packages\Antlr3.3.5.1\Antlr3.3.5.1.nupkg" />
-    <Content Include="packages\Antlr3.3.5.1\build\Antlr3.props" />
-    <Content Include="packages\Antlr3.3.5.1\build\Antlr3.targets" />
-    <Content Include="packages\Antlr3.3.5.1\tools\Antlr3.exe.config" />
-    <Content Include="packages\Antlr3.3.5.1\tools\Antlr3.props" />
-    <Content Include="packages\Antlr3.3.5.1\tools\Antlr3.targets" />
-    <Content Include="packages\Antlr3.3.5.1\tools\Codegen\Templates\CSharp2\AST.stg" />
-    <Content Include="packages\Antlr3.3.5.1\tools\Codegen\Templates\CSharp2\ASTDbg.stg" />
-    <Content Include="packages\Antlr3.3.5.1\tools\Codegen\Templates\CSharp2\ASTParser.stg" />
-    <Content Include="packages\Antlr3.3.5.1\tools\Codegen\Templates\CSharp2\ASTTreeParser.stg" />
-    <Content Include="packages\Antlr3.3.5.1\tools\Codegen\Templates\CSharp2\CSharp2.stg" />
-    <Content Include="packages\Antlr3.3.5.1\tools\Codegen\Templates\CSharp2\Dbg.stg" />
-    <Content Include="packages\Antlr3.3.5.1\tools\Codegen\Templates\CSharp2\ST.stg" />
-    <Content Include="packages\Antlr3.3.5.1\tools\Codegen\Templates\CSharp3\AST.stg" />
-    <Content Include="packages\Antlr3.3.5.1\tools\Codegen\Templates\CSharp3\ASTDbg.stg" />
-    <Content Include="packages\Antlr3.3.5.1\tools\Codegen\Templates\CSharp3\ASTParser.stg" />
-    <Content Include="packages\Antlr3.3.5.1\tools\Codegen\Templates\CSharp3\ASTTreeParser.stg" />
-    <Content Include="packages\Antlr3.3.5.1\tools\Codegen\Templates\CSharp3\CSharp3.stg" />
-    <Content Include="packages\Antlr3.3.5.1\tools\Codegen\Templates\CSharp3\Dbg.stg" />
-    <Content Include="packages\Antlr3.3.5.1\tools\Codegen\Templates\CSharp3\ST.stg" />
-    <Content Include="packages\Antlr3.3.5.1\tools\Codegen\Templates\LeftRecursiveRules.stg" />
-    <Content Include="packages\Antlr3.3.5.1\tools\Tool\Templates\depend.stg" />
-    <Content Include="packages\Antlr3.3.5.1\tools\Tool\Templates\dot\dot.stg" />
-    <Content Include="packages\Antlr3.3.5.1\tools\Tool\Templates\messages\formats\antlr.stg" />
-    <Content Include="packages\Antlr3.3.5.1\tools\Tool\Templates\messages\formats\vs2005.stg" />
-    <Content Include="packages\Antlr3.3.5.1\tools\Tool\Templates\messages\languages\en.stg" />
-    <Content Include="packages\Antlr3.Runtime.3.5.1\Antlr3.Runtime.3.5.1.nupkg" />
-    <Content Include="packages\Microsoft.AspNet.Web.Optimization.1.1.3\Microsoft.AspNet.Web.Optimization.1.1.3.nupkg" />
-    <Content Include="packages\Microsoft.Web.Infrastructure.1.0.0.0\Microsoft.Web.Infrastructure.1.0.0.0.nupkg" />
-    <Content Include="packages\WebGrease.1.6.0\WebGrease.1.6.0.nupkg" />
     <Content Include="Content\milligram.css.map" />
+    <None Include="Properties\PublishProfiles\bis-inbound-ard-del-after-july2019 - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\bis-inbound-ard-del-after-july2019 - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml">
       <SubType>Designer</SubType>
     </None>
@@ -468,7 +389,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="obj\Debug\" />
     <Folder Include="Views\Basic\" />
     <Folder Include="Views\REST\" />
     <Folder Include="Views\SetupEmpty\" />
