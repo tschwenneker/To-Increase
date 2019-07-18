@@ -1,5 +1,0 @@
-﻿New-Item -type directory -path C:\MyFolder
-$Acl = Get-Acl "C:\MyFolder"
-$Ar = New-Object  system.security.accesscontrol.filesystemaccessrule("username","FullControl","Allow")
-$Acl.SetAccessRule($Ar)
-Set-Acl "C:\MyFolder" $Acl
